@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amerikai Autók Világa</title>
+    <title>Amerikai Autók</title>
     <style>
         /* Alap stílusok */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #f8f8f8;
             margin: 0;
             padding: 0;
+            color: #333;
         }
 
         header {
             background-color: #1e2a3a;
             color: white;
-            text-align: center;
             padding: 20px 0;
+            text-align: center;
         }
 
         header h1 {
@@ -46,7 +46,24 @@
             text-decoration: underline;
         }
 
-        section {
+        .intro {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #222;
+            color: white;
+        }
+
+        .intro h2 {
+            font-size: 2.5em;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .gallery {
             padding: 40px 20px;
             text-align: center;
         }
@@ -55,12 +72,12 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 20px;
         }
 
         .car-gallery img {
             width: 30%;
-            border-radius: 10px;
+            border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
@@ -69,13 +86,20 @@
             color: white;
             text-align: center;
             padding: 15px;
-            position: fixed;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
 
         footer p {
             margin: 0;
+        }
+
+        /* Mobilra optimalizált */
+        @media (max-width: 768px) {
+            .car-gallery img {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -94,27 +118,22 @@
         </nav>
     </header>
 
-    <section>
-        <h2>Üdvözlünk az amerikai autók világában!</h2>
-        <p>Az amerikai autók híresek az erőteljes motorjaikról, lenyűgöző dizájnjukról és gazdag történelmükről. Az amerikai autóipar az egyik legismertebb a világon, és a legismertebb modellek közé tartozik a Ford Mustang, a Chevrolet Corvette és a Dodge Charger. Itt mindent megtudhatsz az amerikai autók legendáiról!</p>
+    <section class="intro">
+        <h2>Fedezd fel az amerikai autók csodálatos világát!</h2>
+        <p>Az amerikai autók híresek erőteljes motorjaikról, egyedi dizájnjukról és kulturális örökségükről. A Ford Mustangtól kezdve a Chevrolet Corvette-en át a Dodge Charger-ig, az amerikai autóipar a világ legismertebb neveit vonultatja fel.</p>
     </section>
 
-    <section>
-        <h2>Amerikai Autómodellek Galéria</h2>
+    <section class="gallery">
+        <h2>Autómodellek Galéria</h2>
         <div class="car-gallery">
-            <img src="https://example.com/ford-mustang.jpg" alt="Ford Mustang">
-            <img src="https://example.com/chevrolet-corvette.jpg" alt="Chevrolet Corvette">
-            <img src="https://example.com/dodge-charger.jpg" alt="Dodge Charger">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/1967_Ford_Mustang_GT.jpg" alt="Ford Mustang">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/2019_Chevrolet_Corvette_Stingray.jpg" alt="Chevrolet Corvette">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/1969_Dodge_Charger.jpg" alt="Dodge Charger">
         </div>
     </section>
 
-    <section>
-        <h2>A történelmük</h2>
-        <p>Az amerikai autók története az 1900-as évek elejére nyúlik vissza, amikor az első modellek elhagyták a gyárakat. A Ford Model T volt az első autó, amelyet tömeggyártásban készítettek, és amely forradalmasította az autóipart. Azóta a különböző amerikai márkák – mint a Chevrolet, Ford, és Dodge – folyamatosan új technológiai vívmányokkal és egyedi designnal rukkolnak elő.</p>
-    </section>
-
     <footer>
-        <p>&copy; 2025 Amerikai Autók Világa</p>
+        <p>&copy; 2025 Amerikai Autók</p>
     </footer>
 
 </body>
