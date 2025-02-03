@@ -3,35 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Az Amerikai Autók Világa</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Amerikai Autók</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <h1>Amerikai Autók</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Főoldal</a></li>
-                <li><a href="tortenet.html">Történet</a></li>
-                <li><a href="modellek.html">Modellek</a></li>
-                <li><a href="ikonok.html">Ikonikus Autók</a></li>
-                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                <li><a href="#">Főoldal</a></li>
+                <li><a href="#">Történelem</a></li>
+                <li><a href="#">Modellek</a></li>
+                <li><a href="#">Galéria</a></li>
+                <li><a href="#">Kapcsolat</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <h1>Üdvözlünk az Amerikai Autók Világában!</h1>
-        <p>Fedezd fel a híres amerikai autómárkákat és modelleket, valamint azok történelmét!</p>
+        <h2>Fedezd fel az amerikai autók világát!</h2>
+        <p>Színes és izgalmas történelem, legendás modellek és ikonikus dizájnok.</p>
     </section>
 
-    <section class="content">
-        <h2>Az Amerikai Autók Története</h2>
-        <p>Az amerikai autók története mély gyökerekkel rendelkezik, amelyek az 1900-as évek elejére nyúlnak vissza. Az Egyesült Államok autóipara világszerte híres a megbízhatóságáról és teljesítményéről. Az olyan legendás márkák, mint a Ford, Chevrolet és Chrysler, alapvetően formálták az autóipar fejlődését.</p>
+    <section class="gallery">
+        <h2>Galéria</h2>
+        <div class="car-images">
+            <img src="car1.jpg" alt="Ford Mustang">
+            <img src="car2.jpg" alt="Chevrolet Corvette">
+            <img src="car3.jpg" alt="Dodge Charger">
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Az Amerikai Autók Világa. Minden jog fenntartva.</p>
+        <p>&copy; 2025 Amerikai Autók</p>
     </footer>
 </body>
 </html>
+CSS (styles.css):
+css
+Másolás
+/* Reset alapok */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Alap stílusok */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.gallery {
+    padding: 40px;
+    text-align: center;
+}
+
+.car-images img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
