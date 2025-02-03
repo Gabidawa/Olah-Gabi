@@ -3,12 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amerikai Autók</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Amerikai Autók Világa</title>
+    <style>
+        /* Alap stílusok */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1e2a3a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 3em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .car-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .car-gallery img {
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #1e2a3a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <h1>Amerikai Autók</h1>
+        <h1>Amerikai Autók Világa</h1>
         <nav>
             <ul>
                 <li><a href="#">Főoldal</a></li>
@@ -20,97 +94,28 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>Fedezd fel az amerikai autók világát!</h2>
-        <p>Színes és izgalmas történelem, legendás modellek és ikonikus dizájnok.</p>
+    <section>
+        <h2>Üdvözlünk az amerikai autók világában!</h2>
+        <p>Az amerikai autók híresek az erőteljes motorjaikról, lenyűgöző dizájnjukról és gazdag történelmükről. Az amerikai autóipar az egyik legismertebb a világon, és a legismertebb modellek közé tartozik a Ford Mustang, a Chevrolet Corvette és a Dodge Charger. Itt mindent megtudhatsz az amerikai autók legendáiról!</p>
     </section>
 
-    <section class="gallery">
-        <h2>Galéria</h2>
-        <div class="car-images">
-            <img src="car1.jpg" alt="Ford Mustang">
-            <img src="car2.jpg" alt="Chevrolet Corvette">
-            <img src="car3.jpg" alt="Dodge Charger">
+    <section>
+        <h2>Amerikai Autómodellek Galéria</h2>
+        <div class="car-gallery">
+            <img src="https://example.com/ford-mustang.jpg" alt="Ford Mustang">
+            <img src="https://example.com/chevrolet-corvette.jpg" alt="Chevrolet Corvette">
+            <img src="https://example.com/dodge-charger.jpg" alt="Dodge Charger">
         </div>
     </section>
 
+    <section>
+        <h2>A történelmük</h2>
+        <p>Az amerikai autók története az 1900-as évek elejére nyúlik vissza, amikor az első modellek elhagyták a gyárakat. A Ford Model T volt az első autó, amelyet tömeggyártásban készítettek, és amely forradalmasította az autóipart. Azóta a különböző amerikai márkák – mint a Chevrolet, Ford, és Dodge – folyamatosan új technológiai vívmányokkal és egyedi designnal rukkolnak elő.</p>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Amerikai Autók</p>
+        <p>&copy; 2025 Amerikai Autók Világa</p>
     </footer>
+
 </body>
 </html>
-CSS (styles.css):
-css
-Másolás
-/* Reset alapok */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Alap stílusok */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    margin-top: 10px;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.hero {
-    background-image: url('hero-image.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 50px;
-    text-align: center;
-}
-
-.hero h2 {
-    font-size: 36px;
-}
-
-.hero p {
-    font-size: 20px;
-}
-
-.gallery {
-    padding: 40px;
-    text-align: center;
-}
-
-.car-images img {
-    width: 30%;
-    margin: 10px;
-    border-radius: 8px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
